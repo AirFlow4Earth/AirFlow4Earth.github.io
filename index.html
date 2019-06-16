@@ -4,22 +4,72 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Team Airflow</title>
 <style>
+body{
+	  	width:75%;
+		margin-left: auto;
+		margin-right: auto;
+}
 header, footer {
 	    width: 100%;
         position: fixed;        
         background: #fff;
 		z-index: 1;
+		margin-left: auto;
+		margin-right: auto;
 		}
 
-header { top:0;height:150px;}
-section { height: 100vh;
-			z-index: 0; 
-			position: relative;
-			}
-footer { bottom:0;height:50px;}
+header { 
+		top:0;
+		height:150px;
+		}
+		
+section { 
+		height: 100vh;
+		z-index: 0; 
+		position: relative;
+		}
+
+footer { 
+		bottom:0;
+		height:100px;
+		}
+
 nav {
     background-color: #fff;
 }
+
+nav a{
+	text-decoration: none;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	animation: none;
+	position: relative;
+	padding-left:.5em;
+
+}
+
+nav a:hover{
+	font-size:large;
+	width: 100px;
+	height: 100px;
+	border: none;
+	box-shadow: 0 0 0 0 ;
+	background-color:rgba(176, 102, 169, 0);
+	border-radius: 100%;
+	cursor: pointer;
+	-webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
+
 main{
 
 	}
@@ -56,7 +106,7 @@ section p,h2{
 </head>
 
 <body>
-<header >
+<header>
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" width="200px" height="150px" viewBox="0 0 200 200" xml:space="preserve">
@@ -157,6 +207,7 @@ section p,h2{
 </nav>
 
 </header>
+
 <main>
 <section id="About">
 <h2 id="sectionTitle">
@@ -546,18 +597,19 @@ Who are we?
 
 <footer>
 <address>
-Roland HESS  
+Roland Hess  
 AIR FLOW QUALITY Pathfinders Initiating Team
-
+<br />
 c/o WERKSTATT  FÜR  INNOVATION 
-    Joachim-Friedrich-Str. 45
-    D-10711 Berlin
-    GERMANY
- </address>
- <div id="phone">
+   <br />
+   Joachim-Friedrich-Str. 45,
+    D-10711 Berlin, GERMANY
+</address>
+ <div class="contact">
 <a href = "tel:+49-173 – 945 73 99">Call the Handy</a>
 <a href = "tel:+49 – 30 – 304 94 61 ">Call the Office</a>
 <a href= "mailto:Werkstatt.Innovation@t-online.de?Subject=Project%20Airflow%20Inquiry%20from%20Website" target="_top">Send an Email</a>
+</div>
  </footer> 
 </body>
 </html>
