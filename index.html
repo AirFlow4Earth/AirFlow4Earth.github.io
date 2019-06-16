@@ -3,6 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Team Airflow</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500&display=swap" rel="stylesheet">
+
 <style>
 body{
 	  	width:75%;
@@ -14,13 +16,17 @@ header, footer {
         position: fixed;        
         background: #fff;
 		z-index: 1;
-		margin-left: auto;
-		margin-right: auto;
+
+		font-family: 'Open Sans', sans-serif;
 		}
 
 header { 
 		top:0;
 		height:150px;
+
+  		left: 0px;
+
+		padding-left:10%;
 		}
 		
 section { 
@@ -35,7 +41,11 @@ footer {
 		}
 
 nav {
-    background-color: #fff;
+
+	font-size:small;
+  	position: absolute;
+  	right: 0px;
+	padding-right:10%;
 }
 
 nav a{
@@ -44,7 +54,7 @@ nav a{
 	-moz-animation: none;
 	-ms-animation: none;
 	animation: none;
-	position: relative;
+
 	padding-left:.5em;
 
 }
@@ -70,6 +80,12 @@ nav a:hover{
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
 
+.font-open{
+	font-family: 'Open Sans', sans-serif;
+}
+.font-raleway{
+font-family: 'Raleway', sans-serif;
+}
 main{
 
 	}
@@ -86,6 +102,14 @@ section p,h2{
     margin-right: auto;
 	width: 90%;
 	}
+
+section p{
+	font-family: 'Raleway', sans-serif;
+}
+
+section h2{
+	font-family: 'Open Sans', sans-serif;
+}
 .noListStyle{list-style-type: none;}
 .vertical-center {
   margin: 0;
@@ -102,6 +126,21 @@ section p,h2{
 	display: inline-block;
 }
 .image{}
+
+
+.AFblue{
+	background-color:#3399cc;
+	}
+.AFgreen{
+	background-color:#669999;
+	}
+.AFpink{
+	background-color:#996699;
+	}
+.white{
+	color:#FFFFFF;
+	}
+
 </style>
 </head>
 
@@ -209,11 +248,11 @@ section p,h2{
 </header>
 
 <main>
-<section id="About">
-<h2 id="sectionTitle">
+<section id="About" class="AFblue">
+<h2 id="sectionTitle" class="white">
 What is AirFlow?
 </h2>
-<p>
+<p class="white">
 Our responsibility, ownership and commitment is looking towards the customers satisfaction by our creativity and involvement
 
 to serve by identifying sources and scores of the flow of air-pollution
@@ -230,28 +269,28 @@ People living besides the roads
 Passengers in each vehicle.
 </p>
 </section>
-<section id="Question">
-<h2 id="sectionTitle">
+<section id="Question" class="AFgreen">
+<h2 id="sectionTitle" class="white">
 Our big question: How to move from A to B at the inner part city of Berlin?
 </h2>
-<p>
+<p class="white">
 We seek map in real-time - by AI based scenarios - the dynamic of pollution data from satellites, local vehicles and stations. TOP for the health of each human mover is the lowest pollution-score for his walk/drive for example: particulate matter, NOx, CO², temperature, wind direction and knots.
 </p>
 </section>
-<section id="Solution">
-<h2 id="sectionTitle">
+<section id="Solution" class="AFpink">
+<h2 id="sectionTitle" class="white">
 What we do about it?
 </h2>
-<p>
+<p class="white">
 route planning (before traveling), route guidance (live)
 </p>
 </section>
 
-<section id="History">
-<h2 id="sectionTitle">
+<section id="History" class="AFblue">
+<h2 id="sectionTitle" class="white">
 How the idea formed?
 </h2>
-<p>
+<p class="white">
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" width="800px" height="200px" viewBox="0 0 800 200" xml:space="preserve">
@@ -400,15 +439,15 @@ How the idea formed?
 <path fill="#B066A9" d="M170.385,101.416c2.116,0,3.832,1.714,3.832,3.831s-1.716,3.831-3.832,3.831"/>
 </svg>
 </p>
-<p>Our AFQ team will present its results and experiences 
+<p class="white">Our AFQ team will present its results and experiences 
 at the upcoming Earthlab Conference 2021 by Microsoft at Singapore.</p>
 </section>
-<section id="Team">
-<h2 id="sectionTitle">
+<section id="Team" class="AFpink">
+<h2 id="sectionTitle" class="white">
 Who are we?
 </h2>
-<p>
-<table id="team">
+<p class="white">
+<table id="team" class="white">
 <tr id="teamMember">
 <th class="image"><img src="#" /><?xml version="1.0" encoding="utf-8"?>
 <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
