@@ -29,11 +29,7 @@ header {
 		padding-left:10%;
 		}
 		
-section { 
-		height: 100vh;
-		z-index: 0; 
-		position: relative;
-		}
+
 
 footer { 
 		bottom:0;
@@ -90,12 +86,16 @@ main{
 
 	}
 section{
+	height: 100vh;
+	z-index: 0; 
+	position: relative;
 	padding-top:215px;
 	margin-left: auto;
     margin-right: auto;
 	width: 75%;
 	}	
-section p,h2{
+
+section p,h2, address, div{
 	margin-top: auto;
     margin-bottom: auto;
 	margin-left: auto;
@@ -103,7 +103,7 @@ section p,h2{
 	width: 90%;
 	}
 
-section p{
+section p, address, div{
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -163,7 +163,13 @@ section h2{
 	background-repeat:no-repeat;
 	background-size: cover;
 	}
-	
+.bg-reach{
+	background-image:url("https://cdn.pixabay.com/photo/2015/01/01/23/55/telephone-586266_960_720.jpg");
+	opacity:1;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+	background-repeat:no-repeat;
+	background-size: cover;
+	}
 .textShadowforSky{
 	text-shadow:1px 1px 2px #990066;
 }
@@ -664,12 +670,14 @@ Who are we?
 </table>
 </p>
 </section>
-</main>
-
-
-<footer>
-<address>
-Roland Hess  
+<section id="Reach" class="bg-reach">
+<h2 id="sectionTitle" class="white textShadowforBerlin">
+Contact one of the Initiators
+</h2>
+<p>
+<address class="white textShadowforBerlin">
+Roland Hess
+<br />  
 AIR FLOW QUALITY Pathfinders Initiating Team
 <br />
 c/o WERKSTATT  FÜR  INNOVATION 
@@ -677,11 +685,18 @@ c/o WERKSTATT  FÜR  INNOVATION
    Joachim-Friedrich-Str. 45,
     D-10711 Berlin, GERMANY
 </address>
- <div class="contact">
+ <div class="contact" class="white textShadowforBerlin">
 <a href = "tel:+49-173 – 945 73 99">Call the Handy</a>
 <a href = "tel:+49 – 30 – 304 94 61 ">Call the Office</a>
 <a href= "mailto:Werkstatt.Innovation@t-online.de?Subject=Project%20Airflow%20Inquiry%20from%20Website" target="_top">Send an Email</a>
 </div>
+</p>
+</section>
+</main>
+
+
+<footer>
+
  </footer> 
 </body>
 </html>
