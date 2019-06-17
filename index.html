@@ -39,7 +39,28 @@ section{
 	margin-left: auto;
     margin-right: auto;
 	width: 75%;
+	  -webkit-transition: width 3s, height 3s, -webkit-transform 3s; /* Safari */
+  transition: width 3s, height 3s, transform 3s;
+   transition: 3s;
+	}
+section:after{
+	 opacity:1;
+
+    -webkit-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+	}
+section:hover:after{
+	opacity:0;
+	}
+section:hover{
+	background:rgba(0,204,255,.5);
+	  -webkit-transition: width 2s; /* Safari prior 6.1 */
+  transition: width 5s;
+  width: 70%;
+    -webkit-transform: rotate(359deg); /* Safari */
+  transform: rotate(359deg);
 	}	
+	
 
 footer { 
 		bottom:0;
