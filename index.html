@@ -16,16 +16,30 @@ header, footer {
         position: fixed;        
         background: #fff;
 		z-index: 1;
-
 		font-family: 'Open Sans', sans-serif;
+		margin:0 auto;
 		}
+		
+.headerCont{
+	width: 80%;
+	left:12.5%;
+
+	}
 
 header { 
 		top:0;
 		height:150px;
-  		left: 0px;
-		padding-left:10%;
 		}
+		
+section{
+	height: 100vh;
+	z-index: 0; 
+	position: relative;
+	padding-top:215px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 75%;
+	}	
 
 footer { 
 		bottom:0;
@@ -37,6 +51,7 @@ nav {
   	position: absolute;
   	right: 0px;
 	padding-right:10%;
+	padding-left:200px;
 }
 
 nav a{
@@ -79,16 +94,7 @@ font-family: 'Raleway', sans-serif;
 main{
 
 	}
-section{
-	height: 100vh;
-	z-index: 0; 
-	position: relative;
-	padding-top:215px;
-	margin-left: auto;
-    margin-right: auto;
-	width: 75%;
-	}	
-
+	
 section p,h2, address, div{
 	margin-top: auto;
     margin-bottom: auto;
@@ -192,7 +198,7 @@ section h2{
 </head>
 
 <body>
-<header>
+<header class="headerCont">
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" width="200px" height="150px" viewBox="0 0 200 200" xml:space="preserve">
@@ -332,7 +338,7 @@ What we do about it?
 route planning (before traveling), route guidance (live)
 </p>
 <p>
-<img src="airflowExample.jpg" />
+<img src="images/airflowExample.jpg"/>
 </p>
 </section>
 
@@ -570,7 +576,8 @@ Who are we?
 <path fill="#B066A9" d="M123.987,59.322c22.459,0,40.688,18.198,40.688,40.678c0,22.48-18.229,40.678-40.688,40.678"/>
 <circle fill="#336667" cx="91.835" cy="60.224" r="42.352"/>
 <path fill="#336667" d="M155.928,178.179c0,8.285-6.715,15-15,15H42.743c-8.284,0-15-6.715-15-15V93.29c0-8.284,6.716-15,15-15
-	h98.185c8.285,0,15,6.716,15,15V178.179z"/>
+	h
+	98.185c8.285,0,15,6.716,15,15V178.179z"/>
 <circle fill="#6CA594" cx="153.593" cy="169.332" r="23.85"/>
 </svg></th>
 <th id="firstName">First Name</th>
