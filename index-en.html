@@ -209,7 +209,63 @@ section h2{
 .textShadowforTeam{
 	text-shadow:1px 1px 2px #333;
 }
+/**** Team member css *****/
+/**** Social Icons *****/
 
+.card-back ul{
+	border: 1px solid #666666;
+}
+.card-back li{
+	list-style:none;
+	display: inline-block;
+}
+
+.card {
+  background-color: transparent;
+  width: 150px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  float:left;
+ 
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Position the front and back side */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+card-container{
+}
 </style>
 </head>
 
@@ -556,89 +612,100 @@ How the idea formed?
 Who are we?
 </h2>
 <p class="white">
-<table id="team" class="white">
-<tr id="teamMember">
-<th class="image"><img src="#" /><?xml version="1.0" encoding="utf-8"?>
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="50px" height="50px" viewBox="0 0 200 200" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#488ECC" stroke-width="8.7797" stroke-miterlimit="10" d="M96.412,43.748
-	c0,20.397-16.534,36.928-36.927,36.928c-20.397,0-36.928-16.53-36.928-36.928S39.087,6.82,59.484,6.82
-	C79.877,6.82,96.412,23.351,96.412,43.748z"/>
-<path fill="#FFFFFF" stroke="#B066A9" stroke-width="10.618" stroke-miterlimit="10" d="M185.04,100
-	c0,33.721-27.333,61.054-61.059,61.054c-33.72,0-61.053-27.333-61.053-61.054c0-33.72,27.333-61.053,61.053-61.053
-	C157.707,38.947,185.04,66.28,185.04,100z"/>
-<path fill="#B066A9" d="M123.987,59.322c22.459,0,40.688,18.198,40.688,40.678c0,22.48-18.229,40.678-40.688,40.678"/>
-<circle fill="#336667" cx="91.835" cy="60.224" r="42.352"/>
-<path fill="#336667" d="M155.928,178.179c0,8.285-6.715,15-15,15H42.743c-8.284,0-15-6.715-15-15V93.29c0-8.284,6.716-15,15-15
-	h98.185c8.285,0,15,6.716,15,15V178.179z"/>
-<circle fill="#6CA594" cx="153.593" cy="169.332" r="23.85"/>
-</svg></th>
-<th id="firstName">First Name</th>
-<th id="lastName">Last Name</th>
-<th id="oneThing">What do I bring to the team?</th>
-</tr>
-<tr id="teamMember">
-<th class="image"><img src="#" /><?xml version="1.0" encoding="utf-8"?>
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="50px" height="50px" viewBox="0 0 200 200" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#488ECC" stroke-width="8.7797" stroke-miterlimit="10" d="M96.412,43.748
-	c0,20.397-16.534,36.928-36.927,36.928c-20.397,0-36.928-16.53-36.928-36.928S39.087,6.82,59.484,6.82
-	C79.877,6.82,96.412,23.351,96.412,43.748z"/>
-<path fill="#FFFFFF" stroke="#B066A9" stroke-width="10.618" stroke-miterlimit="10" d="M185.04,100
-	c0,33.721-27.333,61.054-61.059,61.054c-33.72,0-61.053-27.333-61.053-61.054c0-33.72,27.333-61.053,61.053-61.053
-	C157.707,38.947,185.04,66.28,185.04,100z"/>
-<path fill="#B066A9" d="M123.987,59.322c22.459,0,40.688,18.198,40.688,40.678c0,22.48-18.229,40.678-40.688,40.678"/>
-<circle fill="#336667" cx="91.835" cy="60.224" r="42.352"/>
-<path fill="#336667" d="M155.928,178.179c0,8.285-6.715,15-15,15H42.743c-8.284,0-15-6.715-15-15V93.29c0-8.284,6.716-15,15-15
-	h98.185c8.285,0,15,6.716,15,15V178.179z"/>
-<circle fill="#6CA594" cx="153.593" cy="169.332" r="23.85"/>
-</svg></th>
-<th id="firstName">First Name</th>
-<th id="lastName">Last Name</th>
-<th id="oneThing">What do I bring to the team?</th>
-</tr>
+<div class="card-container">
 
-<tr id="teamMember">
-<th class="image"><img src="#" /><?xml version="1.0" encoding="utf-8"?>
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="50px" height="50px" viewBox="0 0 200 200" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#488ECC" stroke-width="8.7797" stroke-miterlimit="10" d="M96.412,43.748
-	c0,20.397-16.534,36.928-36.927,36.928c-20.397,0-36.928-16.53-36.928-36.928S39.087,6.82,59.484,6.82
-	C79.877,6.82,96.412,23.351,96.412,43.748z"/>
-<path fill="#FFFFFF" stroke="#B066A9" stroke-width="10.618" stroke-miterlimit="10" d="M185.04,100
-	c0,33.721-27.333,61.054-61.059,61.054c-33.72,0-61.053-27.333-61.053-61.054c0-33.72,27.333-61.053,61.053-61.053
-	C157.707,38.947,185.04,66.28,185.04,100z"/>
-<path fill="#B066A9" d="M123.987,59.322c22.459,0,40.688,18.198,40.688,40.678c0,22.48-18.229,40.678-40.688,40.678"/>
-<circle fill="#336667" cx="91.835" cy="60.224" r="42.352"/>
-<path fill="#336667" d="M155.928,178.179c0,8.285-6.715,15-15,15H42.743c-8.284,0-15-6.715-15-15V93.29c0-8.284,6.716-15,15-15
-	h98.185c8.285,0,15,6.716,15,15V178.179z"/>
-<circle fill="#6CA594" cx="153.593" cy="169.332" r="23.85"/>
-</svg></th>
-<th id="firstName">First Name</th>
-<th id="lastName">Last Name</th>
-<th id="oneThing">What do I bring to the team?</th>
-</tr>
-<tr id="teamMember">
-<th class="image"><img src="#" /><?xml version="1.0" encoding="utf-8"?>
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="50px" height="50px" viewBox="0 0 200 200" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#488ECC" stroke-width="8.7797" stroke-miterlimit="10" d="M96.412,43.748
-	c0,20.397-16.534,36.928-36.927,36.928c-20.397,0-36.928-16.53-36.928-36.928S39.087,6.82,59.484,6.82
-	C79.877,6.82,96.412,23.351,96.412,43.748z"/>
-<path fill="#FFFFFF" stroke="#B066A9" stroke-width="10.618" stroke-miterlimit="10" d="M185.04,100
-	c0,33.721-27.333,61.054-61.059,61.054c-33.72,0-61.053-27.333-61.053-61.054c0-33.72,27.333-61.053,61.053-61.053
-	C157.707,38.947,185.04,66.28,185.04,100z"/>
-<path fill="#B066A9" d="M123.987,59.322c22.459,0,40.688,18.198,40.688,40.678c0,22.48-18.229,40.678-40.688,40.678"/>
-<circle fill="#336667" cx="91.835" cy="60.224" r="42.352"/>
-<path fill="#336667" d="M155.928,178.179c0,8.285-6.715,15-15,15H42.743c-8.284,0-15-6.715-15-15V93.29c0-8.284,6.716-15,15-15
-	h98.185c8.285,0,15,6.716,15,15V178.179z"/>
-<circle fill="#6CA594" cx="153.593" cy="169.332" r="23.85"/>
-</svg></th>
-<th id="firstName">First Name</th>
-<th id="lastName">Last Name</th>
-<th id="oneThing">What do I bring to the team?</th>
-</tr>
-</table>
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:15%;height:15%;">
+    </div>
+    <div class="card-back">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+      <ul class="social-icons">
+        <li>
+        <!-- facebook --> 
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+          </a>
+        </li>
+        <li>
+                <!-- twitter --> 
+          <a href="">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+        </li>
+        <li>
+           <!-- linkedin --> 
+          <a href="">
+ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </li>
+                <li>
+           <!-- email --> 
+          <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+  <!-- end team member card --> 
+  
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:15%;height:15%;">
+    </div>
+    <div class="card-back">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+      <ul class="social-icons">
+        <li>
+        <!-- facebook --> 
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+          </a>
+        </li>
+        <li>
+                <!-- twitter --> 
+          <a href="">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+        </li>
+        <li>
+           <!-- linkedin --> 
+          <a href="">
+ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </li>
+                <li>
+           <!-- email --> 
+          <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+  <!-- end team member card --> 
+
+
+    
+     
+ </div><!-- end team member card container -->
 </p>
 </section>
 <section id="Reach" class="bg-reach">
