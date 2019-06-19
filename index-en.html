@@ -10,6 +10,8 @@ body{
 	  	width:75%;
 		margin-left: auto;
 		margin-right: auto;
+background: rgba(255,255,255,1);
+
 }
 header, footer {
 	    width: 100%;
@@ -18,51 +20,25 @@ header, footer {
 		z-index: 1;
 		font-family: 'Open Sans', sans-serif;
 		margin:0 auto;
-		}
 		
-.headerCont{
-	width: 80%;
-	left:12.5%;
-
-	}
+		}
 
 header { 
 		top:0;
 		height:150px;
 		}
-		
-section{
-	height: 100vh;
-	z-index: 0; 
-	position: relative;
-	padding-top:215px;
-	margin-left: auto;
-    margin-right: auto;
-	width: 75%;
-	  -webkit-transition: width 3s, height 3s, -webkit-transform 3s; /* Safari */
-  transition: width 3s, height 3s, transform 3s;
-   transition: 3s;
-	}
-section:after{
-	 opacity:1;
 
-    -webkit-transition: opacity 1.5s;
-    transition: opacity 1.5s;
-	}
-section:hover:after{
-	opacity:0;
-	}
-section:hover{
-	background:rgba(0,0,0,.75);
-	color:#FFF;
-	width:70%;
-	}	
-	
 footer { 
 		bottom:0;
 		height:100px;
 		}
 
+.headerCont, .footerCont{
+	width: 80%;
+	left:12.5%;
+
+	}
+/**** navigation *****/
 nav {
 	font-size:small;
   	position: absolute;
@@ -102,16 +78,15 @@ nav a:hover{
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(176, 102, 169, 0);}}
 
+/**** imported fonts *****/
 .font-open{
 	font-family: 'Open Sans', sans-serif;
 }
 .font-raleway{
 font-family: 'Raleway', sans-serif;
 }
-main{
 
-	}
-	
+/**** information section css *****/
 section p,h2, address, div{
 	margin-top: auto;
     margin-bottom: auto;
@@ -142,8 +117,35 @@ section h2{
 #link{
 	display: inline-block;
 }
-.image{}
 
+		
+section{
+	height: 100vh;
+	z-index: 0; 
+	position: relative;
+	padding-top:215px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 75%;
+	  -webkit-transition: width 3s, height 3s, -webkit-transform 3s; /* Safari */
+  transition: width 3s, height 3s, transform 3s;
+   transition: 3s;
+	}
+section:after{
+	 opacity:1;
+
+    -webkit-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+	}
+section:hover:after{
+	opacity:0;
+	}
+section:hover{
+	background:rgba(0,0,0,.75);
+	color:#FFF;
+	width:70%;
+	}	
+/**** logo color scheme *****/
 
 .AFblue{
 	background-color:#3399cc;
@@ -154,6 +156,9 @@ section h2{
 .AFpink{
 	background-color:#996699;
 	}
+
+/**** text colors *****/
+
 .white{
 	color:#FFFFFF;
 	}
@@ -161,6 +166,7 @@ section h2{
 	color:#669999;
 	}
 
+/**** section background imports *****/
 
 .bg-sky{
 	background-image:url("https://cdn.pixabay.com/photo/2018/04/30/00/06/nature-3361468_960_720.jpg");
@@ -199,6 +205,8 @@ section h2{
 	background-repeat:no-repeat;
 	background-size: cover;
 	}
+
+/**** shadow adjustments for text over section backgrounds *****/
 
 .textShadowforSky{
 	text-shadow:1px 1px 2px #990066;
@@ -733,7 +741,7 @@ c/o WERKSTATT  FÜR  INNOVATION
 </main>
 
 
-<footer>
+<footer class="footerCont">
 
  </footer> 
 </body>
