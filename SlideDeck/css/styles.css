@@ -69,7 +69,7 @@ section.active {
 
 section.titleSlide, section.endSlide {
 	padding-top:25%;
-	background:#67BEEA url(../images/background_buildings.jpg);
+	background:#67BEEA url(../images/background.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
