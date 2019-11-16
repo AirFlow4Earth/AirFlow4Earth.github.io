@@ -191,7 +191,13 @@ audio, .mejs-audio {/*hide audio player*/
 }
 
 .mission{
+		background-image:url(../images/map1.svg);
+	background-size:150% 150%;
+	background-repeat:no-repeat;
+	background-position:center;
+	height: 125%;
 }
+
 
 .features{
 }
@@ -351,4 +357,11 @@ a:hover {
 }
 
 .member{
+}
+
+/*SVG additions*/
+
+svg{
+  -webkit-filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, .8));
+  filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, .8));
 }
