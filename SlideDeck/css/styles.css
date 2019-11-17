@@ -200,7 +200,15 @@ audio, .mejs-audio {/*hide audio player*/
 
 
 .features{
+background-image:url(../images/road.gif);
+	background-size:150% 150%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	color:#0CF;
+	text-shadow: 2px 2px #006;
 }
+
 
 .details{
 }
