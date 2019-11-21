@@ -1,6 +1,6 @@
 var currentSlide = -1;
 var stepThroughBullets = true;
-var autoPlaySlides = true;
+var autoPlaySlides = false;
 var autoPlayMedia = true;
 var autoNextOnMediaEnd = true;
 var slideDuration = 1000;

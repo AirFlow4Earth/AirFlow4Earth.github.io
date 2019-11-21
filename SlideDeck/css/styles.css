@@ -373,3 +373,10 @@ svg{
   -webkit-filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, .8));
   filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, .8));
 }
+
+.model{
+	background-image:url(../media/airflowModel.svg);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	}
