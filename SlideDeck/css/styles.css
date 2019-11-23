@@ -199,7 +199,7 @@ audio, .mejs-audio {/*hide audio player*/
 }
 
 
-.features{
+.gaps{
 background-image:url(../images/road.gif);
 	background-size:150% 150%;
 	background-repeat:no-repeat;
@@ -379,4 +379,31 @@ svg{
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center;
+	}
+	
+.running{
+	background-image:url(../images/runningBG.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFF;
+	text-shadow: 2px 2px #03F;
+	}
+
+.clima{
+	background-image:url(../images/climateBehaviors.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFF;
+	text-shadow: 2px 2px #03F;
+	}
+	
+.drive{
+	background-image:url(../images/driving.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFF;
+	text-shadow: 2px 2px #03F;
 	}
