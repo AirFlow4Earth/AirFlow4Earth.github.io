@@ -357,11 +357,19 @@ a:hover {
 	display: flex;
 	flex-flow: row wrap;
 	color:#333;
+
+	
 }
 
 .flex-container-m > div {
 	  background-color:#CCC;
 	  width:25%;
+	  display:flex;
+	  		  justify-content:center;
+		  align-items:center;
+		  flex-flow:column;
+
+	  
 }
 
 .member{
